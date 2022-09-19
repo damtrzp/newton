@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
+  color: #ddd;
+  border: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media(pointer:fine) {
+  .menu button {
+    transition: background-color 0.3s;
+  }
+}
+.menu button, input {
+  background-color: #333;
+  color: #ddd;
+  padding:3%;
+  margin: 0.5%;
+  border-radius: 5px;
+  border: 0;
+}
+.menu button:hover {
+  background-color: #555;
+}
+.menu button:disabled {
+  color: #222;
+  background-color: #333;
+}
+
+
+input {
+  background-color: #282828;
 }
